@@ -8,3 +8,5 @@ gemini_api/.envi/
 gemini_api/example.py
 gemini_api/image.py
 gemini_api/.env
+main.py
+devserver.sh
