@@ -18,3 +18,5 @@ chat = client.chats.create(model="gemini-2.0-flash", config=config)
 def sample_question(message):
 	respon= chat.send_message(message)
 	return respon.text
+def get_history():
+	return chat.get_history()
