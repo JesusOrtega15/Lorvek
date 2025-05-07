@@ -12,7 +12,7 @@ def index():
 
     return render_template("indice.html", response=response)
     
-@app.route('history')
+@app.route('/history')
 def history():
     history = get_history()
     conversacion = []
