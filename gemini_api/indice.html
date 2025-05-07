@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <title>Pagina</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <fieldset>
+			<legend>Lorvek Chat</legend>
+        	<label for="name" class="in">Introduzca consulta</label>
+        	<input type="text" name="name" id="name">
+        	<input type="submit" value="Enviar" id="enviar">
+    
+    
+	
+    		{% if response %}
+    		<div>
+        		<p>{{ response }}</p>
+    		</div>
+        
+    		{% endif %}
+        </fieldset>
+    </form>
+</body>
+</html>
