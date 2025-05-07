@@ -1,9 +1,9 @@
 from google import genai
 import os
-from dotenv import load_dotenv
+
 from google.genai import types
 
-load_dotenv()
+
 client = genai.Client(api_key = os.environ.get('API_KEY', "not found"))
 config = types.GenerateContentConfig(
     temperature=1.2,
