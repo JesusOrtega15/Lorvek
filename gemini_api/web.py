@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from chat import sample_question
+from .chat import sample_question
 app = Flask(__name__, template_folder=".")
 
 @app.route('/', methods=['GET', 'POST'])
